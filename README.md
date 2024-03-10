@@ -74,10 +74,9 @@ gradle clean user_test
 ____
 <a id="jenkins"></a>
 ## <img width="4%" style="vertical-align:bottom" title="Jenkins" src="media/Jenkins.svg"> </a> Jenkins Build <a target="_blank"> </a>
-
+To start the build, go to the "Build with parameters" section, select the necessary parameters, and click "Build".
 > Registration on the [Jenkins](https://jenkins.autotests.cloud/) resource is required for access to Jenkins.
 
-To start the build, go to the "Build with parameters" section, select the necessary parameters, and click "Build".
 ### Jenkins Build Parameters:
 - TASK (set of tests to run)
 - BASE (tested site base url)
@@ -102,7 +101,7 @@ ____
 
 ____
 <a id="allure"></a>
-## <img width="4%" style="vertical-align:bottom" title="Allure TestOps" src="media/AllureTestOps.svg"> </a> Integration with <a target="_blank" href="https://allure.autotests.cloud/project/3952/dashboards"> Allure TestOps </a>
+## <img width="4%" style="vertical-align:bottom" title="Allure TestOps" src="media/AllureTestOps.svg"> </a> Integration with <a target="_blank" href="https://allure.autotests.cloud/project/4126/dashboards"> Allure TestOps </a>
 
 On the *Dashboard* in **Allure TestOps**, you can see the statistics of the number of tests: how many of them are added and executed manually, how many are automated. New tests and test run results are sent through the integration with each build.
 
@@ -120,7 +119,7 @@ On the *Dashboard* in **Allure TestOps**, you can see the statistics of the numb
 
 ____
 <a id="jira"></a>
-## <img width="4%" style="vertical-align:bottom" title="Jira" src="media/Jira.svg"> </a> Integration with <a target="_blank" href="https://jira.autotests.cloud/browse/HOMEWORK-1155"> Jira </a>
+## <img width="4%" style="vertical-align:bottom" title="Jira" src="media/Jira.svg"> </a> Integration with <a target="_blank" href="https://jira.autotests.cloud/browse/HOMEWORK-1161"> Jira </a>
 
 Integration with **Allure TestOps** and **Jira** is implemented. In the Jira task, you can see which test cases were written as part of the task and their execution results.
 
