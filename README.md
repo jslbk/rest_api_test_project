@@ -74,8 +74,10 @@ gradle clean user_test
 
 ____
 <a id="jenkins"></a>
-## <img width="4%" style="vertical-align:bottom" title="Jenkins" src="media/Jenkins.svg"> </a> Jenkins Build <a target="_blank"> </a>
+## <img width="4%" style="vertical-align:bottom" title="Jenkins" src="media/Jenkins.svg"> </a> Jenkins <a target="_blank" href="https://jenkins.autotests.cloud/job/api_test_automation/"> Build </a>
+
 To start the build, go to the "Build with parameters" section, select the necessary parameters, and click "Build".
+
 > Registration on the [Jenkins](https://jenkins.autotests.cloud/) resource is required for access to Jenkins.
 
 ### Jenkins Build Parameters:
