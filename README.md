@@ -1,4 +1,4 @@
-# [Reqres.in](https://reqres.in) API automations tests
+# [Reqres.in](https://reqres.in) API test automation project demo
 
 <img alt="Reqres.in" src="media/reqres.png" width="100%">
 
