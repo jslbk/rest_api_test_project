@@ -32,7 +32,7 @@ ____
 
 ____
 <a id="cases"></a>
-## 🗒️ Scenarios
+## 🗒️ Test cases
 
 #### Login Feature
 - Check user not found login response
