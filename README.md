@@ -111,11 +111,11 @@ On the *Dashboard* in **Allure TestOps**, you can see the statistics of the numb
 </p>
 
 <p align="center">
-<img title="Allure TestOps Graphs" src="media/AllureTestOpsDash.png">
+<img title="Allure TestOps Dashboard" src="media/AllureTestOpsDash.png">
 </p>
 
 <p align="center">
-<img title="Allure TestOps Graphs2" src="media/AllureTestOpsGraphs.png">
+<img title="Allure TestOps Graphs" src="media/AllureTestOpsGraphs.png">
 </p>
 
 ____
