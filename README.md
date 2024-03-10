@@ -1,4 +1,4 @@
-# Automated API tests for [REQRES.IN](https://reqres.in)
+# [Reqres.in](https://reqres.in) API automations tests
 
 <img alt="Reqres.in" src="media/reqres.png" width="100%">
 
@@ -73,7 +73,7 @@ gradle clean user_test
 
 ____
 <a id="jenkins"></a>
-## <img width="4%" style="vertical-align:bottom" title="Jenkins" src="media/icons/Jenkins.svg"> </a> Jenkins Build <a target="_blank"> </a>
+## <img width="4%" style="vertical-align:bottom" title="Jenkins" src="media/Jenkins.svg"> </a> Jenkins Build <a target="_blank"> </a>
 
 > Registration on the [Jenkins](https://jenkins.autotests.cloud/) resource is required for access to Jenkins.
 
@@ -83,53 +83,57 @@ To start the build, go to the "Build with parameters" section, select the necess
 - BASE (tested site base url)
 
 <p align="center">
-<img title="Jenkins Build" src="media/screenshots/Jenkins.png">
+<img title="Jenkins Build" src="media/Jenkins.png">
 </p>
 
 > After the build is completed, icons for "Allure Report" and "Allure TestOps" will appear next to the build number in the "Build History" section. Clicking on these icons opens pages with the generated HTML report and test documentation, respectively.
 
 ____
 <a id="allureReport"></a>
-## <img width="4%" style="vertical-align:bottom" title="Allure Report" src="media/icons/Allure_Report.svg"> </a> Example of <a target="_blank" href="https://jenkins.autotests.cloud/job/ui_test_automation_project/5/"> Allure Report </a>
+## <img width="4%" style="vertical-align:bottom" title="Allure Report" src="media/Allure.svg"> </a> Example of <a target="_blank" href="https://jenkins.autotests.cloud/job/api_test_automation/20/"> Allure Report </a>
 
 <p align="center">
-<img title="Allure Overview" src="media/screenshots/Allure.png">
+<img title="Allure Overview" src="media/Allure.png">
 </p>
 
 <p align="center">
-<img title="Allure Graphs" src="media/screenshots/AllureGraphs.png">
+<img title="Allure Graphs" src="media/AllureGraphs.png">
 </p>
 
 ____
 <a id="allure"></a>
-## <img width="4%" style="vertical-align:bottom" title="Allure TestOps" src="media/icons/AllureTestOps.svg"> </a> Integration with <a target="_blank" href="https://allure.autotests.cloud/project/3952/dashboards"> Allure TestOps </a>
+## <img width="4%" style="vertical-align:bottom" title="Allure TestOps" src="media/AllureTestOps.svg"> </a> Integration with <a target="_blank" href="https://allure.autotests.cloud/project/3952/dashboards"> Allure TestOps </a>
 
 On the *Dashboard* in **Allure TestOps**, you can see the statistics of the number of tests: how many of them are added and executed manually, how many are automated. New tests and test run results are sent through the integration with each build.
 
 <p align="center">
-<img title="Allure TestOps DashBoard" src="media/screenshots/AllureTestOps.png">
+<img title="Allure TestOps Cases" src="media/AllureTestOpsCases.png">
 </p>
 
 <p align="center">
-<img title="Allure TestOps DashBoard" src="media/screenshots/AllureTestOpsDash.png">
+<img title="Allure TestOps Graphs" src="media/AllureTestOpsDash.png">
+</p>
+
+<p align="center">
+<img title="Allure TestOps Graphs2" src="media/AllureTestOpsGraphs.png">
 </p>
 
 ____
 <a id="jira"></a>
-## <img width="4%" style="vertical-align:bottom" title="Jira" src="media/icons/Jira.svg"> </a> Integration with <a target="_blank" href="https://jira.autotests.cloud/browse/HOMEWORK-1155"> Jira </a>
+## <img width="4%" style="vertical-align:bottom" title="Jira" src="media/Jira.svg"> </a> Integration with <a target="_blank" href="https://jira.autotests.cloud/browse/HOMEWORK-1155"> Jira </a>
 
 Integration with **Allure TestOps** and **Jira** is implemented. In the Jira task, you can see which test cases were written as part of the task and their execution results.
 
 <p align="center">
-<img title="Jira Task" src="media/screenshots/JiraTask.png">
+<img title="Jira Task" src="media/JiraTask.png">
 </p>
 
 ____
 <a id="telegram"></a>
-## <img width="4%" style="vertical-align:bottom" title="Telegram" src="media/icons/Telegram.svg"> Telegram notifications via bot
+## <img width="4%" style="vertical-align:bottom" title="Telegram" src="media/Telegram.svg"> Telegram notifications via bot
 
 After the build is complete, a **Telegram** bot automatically processes and sends a message with the test run report to a specifically configured chat.
 
 <p align="left">
-<img width="30%" title="Telegram Notifications" src="media/screenshots/TelegramBot.png">
+<img width="30%" title="Telegram Notifications" src="media/TelegramBot.jpeg">
 </p>
