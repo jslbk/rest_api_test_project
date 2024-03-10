@@ -1,6 +1,6 @@
 # [Reqres.in](https://reqres.in) API test automation project demo
 
-<img alt="Reqres.in" src="media/reqres.png" width="100%">
+<img alt="Reqres.in" src="media/Reqres.png" width="100%">
 
 ----
 ## 📂 Content
@@ -20,7 +20,8 @@ ____
 
 <p align="center">
 <a href="https://www.java.com/"><img width="6%" title="Java" src="media/Java.svg"></a>
-<a href="https://www.java.com/"><img width="6%" title="Java" src="media/RestAssured.png"></a>
+<a href="https://rest-assured.io/"><img width="6%" title="Java" src="media/RestAssured.png"></a>
+<a href="https://selenide.org/"><img width="6%" title="Selenide" src="media/Selenide.svg"></a>
 <a href="https://www.atlassian.com/ru/software/jira/"><img width="5%" title="Jira" src="media/Jira.svg"></a>
 <a href="https://allurereport.org/"><img width="6%" title="Allure Report" src="media/Allure.svg"></a>
 <a href="https://qameta.io/"><img width="5%" title="Allure TestOps" src="media/AllureTestOps.svg"></a>
