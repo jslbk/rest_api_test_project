@@ -32,7 +32,7 @@ ____
 
 ____
 The project utilizes <code>[Java](https://www.java.com/)</code> along with <code>[REST Assured](https://rest-assured.io/)</code> for API testing. 
-Integration with tools like </code>[Jira](https://www.atlassian.com/ru/software/jira/)</code> for issue tracking, <code>[Allure](https://allurereport.org/)</code> for test reporting, and <code>[Jenkins](https://www.jenkins.io/)</code> for continuous integration. 
+Integration with tools like <code>[Jira](https://www.atlassian.com/ru/software/jira/)</code> for issue tracking, <code>[Allure](https://allurereport.org/)</code> for test reporting, and <code>[Jenkins](https://www.jenkins.io/)</code> for continuous integration. 
 <code>[Gradle](https://gradle.org/)</code> is used for project automation along with <code>[JUnit5](https://junit.org/junit5/)</code> for test execution. Integration with <code>[Allure TestOps](https://qameta.io/)</code>, provides connection for test management and analysis.
 
 After the completion of a build, the <code>[Telegram](https://web.telegram.org/)</code> bot automatically processes and dispatches a message containing the test run report to a pre-configured chat.
