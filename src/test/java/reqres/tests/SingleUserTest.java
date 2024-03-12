@@ -1,7 +1,6 @@
 package reqres.tests;
 
 import io.qameta.allure.Feature;
-import io.qameta.allure.Story;
 import models.UserResponseModel;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
@@ -20,7 +19,7 @@ public class SingleUserTest extends TestBase {
 
     @Test
     @DisplayName("Verify not found response for specific user")
-    @Story("404")
+    @Tag("Negative")
     void testSpecificUserNotFound() {
         step("Make request and check status", () -> given(requestSpec)
 
@@ -28,13 +27,12 @@ public class SingleUserTest extends TestBase {
                 .get("/users/23")
 
                 .then()
-                .statusCode(404)
-                .extract().as(UserResponseModel.class));
+                .statusCode(404));
     }
 
     @Test
     @DisplayName("Verify response data for specific user")
-    @Story("200")
+    @Tag("Positive")
     void testSpecificUserData() {
         UserResponseModel response = step("Make request", () -> given(requestSpec)
 

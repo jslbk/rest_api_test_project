@@ -1,7 +1,6 @@
 package reqres.tests;
 
 import io.qameta.allure.Feature;
-import io.qameta.allure.Story;
 import models.login.LoginBodyModel;
 import models.registration.RegistrationResponseModel;
 import org.junit.jupiter.api.DisplayName;
@@ -22,7 +21,7 @@ public class LoginTest extends TestBase {
 
     @Test
     @DisplayName("Check user not found login response")
-    @Story("400")
+    @Tag("Negative")
     void testUserNotFound() {
         LoginBodyModel requestBody = new LoginBodyModel();
         requestBody.setEmail("bad@reqres.in");
@@ -44,7 +43,7 @@ public class LoginTest extends TestBase {
 
     @Test
     @DisplayName("Check successful login response")
-    @Story("200")
+    @Tag("Positive")
     void testLoginSuccessful() {
         LoginBodyModel requestBody = new LoginBodyModel();
         requestBody.setEmail("eve.holt@reqres.in");

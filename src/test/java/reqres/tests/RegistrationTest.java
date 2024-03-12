@@ -1,7 +1,6 @@
 package reqres.tests;
 
 import io.qameta.allure.Feature;
-import io.qameta.allure.Story;
 import models.registration.RegistrationBodyModel;
 import models.registration.RegistrationResponseModel;
 import org.junit.jupiter.api.DisplayName;
@@ -10,7 +9,7 @@ import org.junit.jupiter.api.Test;
 
 import static io.qameta.allure.Allure.step;
 import static io.restassured.RestAssured.given;
-import static org.hamcrest.Matchers.notNullValue;
+import static org.hamcrest.Matchers.*;
 import static org.junit.jupiter.api.Assertions.*;
 import static specifications.Specs.requestSpec;
 import static specifications.Specs.responseSpec;
@@ -22,7 +21,7 @@ public class RegistrationTest extends TestBase {
 
     @Test
     @DisplayName("Verify successful registration")
-    @Story("200")
+    @Tag("Positive")
     void testSuccessfulRegistration() {
         RegistrationBodyModel requestBody = new RegistrationBodyModel();
         requestBody.setEmail("eve.holt@reqres.in");
@@ -37,7 +36,10 @@ public class RegistrationTest extends TestBase {
                 .then()
                 .spec(responseSpec)
                 .statusCode(200)
-                .body("token", notNullValue())
+                .body("token", allOf(
+                        notNullValue(),
+                        matchesPattern(".*[a-zA-Z].*[0-9].*"),
+                        hasLength(17)))
                 .extract().as(RegistrationResponseModel.class));
         step("Check response", () ->
                 assertEquals(4, response.getId()));
@@ -45,7 +47,7 @@ public class RegistrationTest extends TestBase {
 
     @Test
     @DisplayName("Verify bad email registration")
-    @Story("400")
+    @Tag("Negative")
     void testRegisterBadEmail() {
         RegistrationBodyModel requestBody = new RegistrationBodyModel();
         requestBody.setEmail("bad@reqres.in");
@@ -67,7 +69,7 @@ public class RegistrationTest extends TestBase {
 
     @Test
     @DisplayName("Verify empty email registration")
-    @Story("400")
+    @Tag("Negative")
     void testRegisterEmptyEmail() {
         RegistrationBodyModel requestBody = new RegistrationBodyModel();
         requestBody.setEmail("");
@@ -89,7 +91,7 @@ public class RegistrationTest extends TestBase {
 
     @Test
     @DisplayName("Verify empty password registration")
-    @Story("400")
+    @Tag("Negative")
     void testRegisterEmptyPassword() {
         RegistrationBodyModel requestBody = new RegistrationBodyModel();
         requestBody.setEmail("eve.holt@reqres.in");
