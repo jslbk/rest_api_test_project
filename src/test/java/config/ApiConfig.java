@@ -6,7 +6,7 @@ import org.aeonbits.owner.Config;
         "system:properties",
         "classpath:${env}.properties",
 })
-public interface WebDriverConfig extends Config {
+public interface ApiConfig extends Config {
     @Key("baseUri")
     @Config.DefaultValue("https://reqres.in")
     String getBaseUri();
