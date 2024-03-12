@@ -21,7 +21,6 @@ ____
 <p align="center">
 <a href="https://www.java.com/"><img width="6%" title="Java" src="media/Java.svg"></a>
 <a href="https://rest-assured.io/"><img width="6%" title="Java" src="media/RestAssured.png"></a>
-<a href="https://selenide.org/"><img width="6%" title="Selenide" src="media/Selenide.svg"></a>
 <a href="https://www.atlassian.com/ru/software/jira/"><img width="5%" title="Jira" src="media/Jira.svg"></a>
 <a href="https://allurereport.org/"><img width="6%" title="Allure Report" src="media/Allure.svg"></a>
 <a href="https://qameta.io/"><img width="5%" title="Allure TestOps" src="media/AllureTestOps.svg"></a>
@@ -30,6 +29,16 @@ ____
 <a href="https://www.jenkins.io/"><img width="6%" title="Jenkins" src="media/Jenkins.svg"></a>
 <a href="https://web.telegram.org/"><img width="6%" title="Telegram" src="media/Telegram.svg"></a>
 </p>
+
+____
+The project utilizes <code>[Java](https://www.java.com/)</code> along with <code>[REST Assured](https://rest-assured.io/)</code> for API testing. 
+Integration with tools like </code>[Jira](https://www.atlassian.com/ru/software/jira/)</code> for issue tracking, <code>[Allure](https://allurereport.org/)</code> for test reporting, and <code>[Jenkins](https://www.jenkins.io/)</code> for continuous integration. 
+<code>[Gradle](https://gradle.org/)</code> is used for project automation along with <code>[JUnit5](https://junit.org/junit5/)</code> for test execution. Integration with <code>[Allure TestOps](https://qameta.io/)</code>, provides connection for test management and analysis.
+
+After the completion of a build, the <code>[Telegram](https://web.telegram.org/)</code> bot automatically processes and dispatches a message containing the test run report to a pre-configured chat.
+
+> Allure report is additionally customized by the provided AllureListener.
+> This customization allows for the inclusion of custom templates for requests and responses, enhancing the clarity and presentation of the test report.
 
 ____
 <a id="cases"></a>
@@ -74,7 +83,7 @@ gradle clean user_test
 
 ____
 <a id="jenkins"></a>
-## <img width="4%" style="vertical-align:bottom" title="Jenkins" src="media/Jenkins.svg"> </a> Jenkins <a target="_blank" href="https://jenkins.autotests.cloud/job/api_test_automation/"> Build </a>
+## <img width="4%" style="vertical-align:bottom" title="Jenkins" src="media/Jenkins.svg"> </a> Jenkins <a target="_blank" href="https://jenkins.autotests.cloud/job/api_test_automation/lastBuild/"> Build </a>
 
 To start the build, go to the "Build with parameters" section, select the necessary parameters, and click "Build".
 
@@ -92,7 +101,7 @@ To start the build, go to the "Build with parameters" section, select the necess
 
 ____
 <a id="allureReport"></a>
-## <img width="4%" style="vertical-align:bottom" title="Allure Report" src="media/Allure.svg"> </a> Example of <a target="_blank" href="https://jenkins.autotests.cloud/job/api_test_automation/lastBuild/"> Allure Report </a>
+## <img width="4%" style="vertical-align:bottom" title="Allure Report" src="media/Allure.svg"> </a> Example of <a target="_blank" href="https://jenkins.autotests.cloud/job/api_test_automation/allure/"> Allure Report </a>
 
 <p align="center">
 <img title="Allure Overview" src="media/Allure.png">
